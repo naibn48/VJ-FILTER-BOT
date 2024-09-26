@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://drive.google.com/file/d/14swXzVHRYlSxP7Y7PsDD_GE2YvP0uKUY/view?usp=drivesdk')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b69af2db776e4e85d21ec.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -56,7 +56,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '0')) # number of referal count
@@ -81,7 +81,7 @@ AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -133,7 +133,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
