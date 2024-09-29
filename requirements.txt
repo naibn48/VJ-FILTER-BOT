@@ -26,6 +26,7 @@ telegraph
 REPO
 asyncio 
 coroutine
+pyromod==1.5
 
 fuzzywuzzy
 python-Levenshtein
